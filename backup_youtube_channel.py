@@ -6,7 +6,7 @@ import googleapiclient.errors
 from openpyxl import Workbook
 
 # Set the proxy server details
-proxy_server = "http://127.0.0.1:7890"
+proxy_server = "http://Your_address:Your_port_number"
 
 # Set the proxy server details for both HTTP and HTTPS
 os.environ["HTTP_PROXY"] = proxy_server
@@ -24,7 +24,7 @@ def authenticate():
         os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
         api_service_name = "youtube"
         api_version = "v3"
-        client_secrets_file = "client_secret_671541520290-hofccnjge24i15pulv8kf2estrrl43en.apps.googleusercontent.com.json"
+        client_secrets_file = "Your_client_secret_.json"
         flow = InstalledAppFlow.from_client_secrets_file(client_secrets_file, scopes)
         credentials = flow.run_local_server(port=8080)
         with open(credentials_file, "wb") as f:
@@ -75,7 +75,7 @@ def main():
     while True:
         request = youtube.search().list(
             part="snippet",
-            channelId="UCgnhFIfZXi_TUvcAR9cBx_A",
+            channelId="Your_Channel_ID",
             maxResults=500,
             publishedAfter="2013-01-01T00:00:00Z",  # Filter videos published after January 1, 2022
             publishedBefore="2023-08-31T23:59:59Z",  # Filter videos published before Aug 31, 2023
