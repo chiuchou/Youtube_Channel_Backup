@@ -1,4 +1,4 @@
-# YouTube Channel Backup Python Code
+# YouTube Channel Backup with Python
 This repository contains Python code for backing up a YouTube channel. It allows you to download all the videos, metadata, and thumbnails from a specified YouTube channel and save them locally for backup purposes.
 
 # Prerequisites
