@@ -6,7 +6,7 @@ import googleapiclient.errors
 from openpyxl import Workbook
 
 # Set the proxy server details
-proxy_server = "write your proxy server in settings"
+proxy_server = "http://Your_address:Your_port_number"
 
 # Set the proxy server details for both HTTP and HTTPS
 os.environ["HTTP_PROXY"] = proxy_server
