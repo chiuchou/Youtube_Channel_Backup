@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 读取xlsx文件
-df = pd.read_excel('updated_imyfone_KR_data.xlsx')
+df = pd.read_excel('your_file.xlsx')
 
 # 去除H列中各个单元格中的重复词
 df['Products'] = df['Products'].apply(lambda x: ', '.join(set(str(x).split(', '))))
