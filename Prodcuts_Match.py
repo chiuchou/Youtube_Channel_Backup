@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.options import Options
 from urllib.parse import urlparse, parse_qs
 
 # 读取xlsx文件
-df = pd.read_excel('imyfone_KR_data.xlsx')
+df = pd.read_excel('your_file.xlsx')
 
 # 设置Chrome浏览器选项
 chrome_options = Options()
